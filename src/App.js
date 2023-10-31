@@ -229,7 +229,7 @@ const App = () => {
                               </td>
                               <td>${data?.Hourly_Consulting_Fee}</td>
                               <td>${data?.Duration}</td>
-                              <td>${data.TOTAL}</td>
+                              <td>${data?.TOTAL}</td>
                             </tr>
                             <tr>
                               <td>&nbsp;</td>
