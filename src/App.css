@@ -29,7 +29,7 @@ body {
 }
 .invoice-container .invoice-header address {
   font-size: 0.8rem;
-  color: #9fa8b9;
+  /* color: #9fa8b9; */
   margin: 0;
 }
 .invoice-container .invoice-details {
@@ -102,6 +102,7 @@ body {
 .custom-table thead th {
   border: 0;
   color: #ffffff;
+  font-size: 14px;
 }
 .custom-table > tbody tr:hover {
   background: #fafafa;
@@ -111,6 +112,7 @@ body {
 }
 .custom-table > tbody td {
   border: 1px solid #e6e9f0;
+  font-size: 14px;
 }
 
 

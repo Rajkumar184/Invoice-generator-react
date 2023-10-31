@@ -86,12 +86,16 @@ const App = () => {
       title: 'Action',
       key: 'action',
       render: (text, record, index) => (
-        <Button
-          type="primary"
-          onClick={() => generateInvoicePDF(renderInvoiceContent(record, index), `invoice_${index}.pdf`)}
-        >
-          Download PDF
-        </Button>
+        <>
+        {console.log(record, "record")}
+          <Button
+            type="primary"
+            onClick={() => generateInvoicePDF(renderInvoiceContent(record, index), `${record?.Name} ${record?.Invoice_No}.pdf`)}
+          >
+            Download PDF
+          </Button>
+        </>
+
       ),
     },
   ];
