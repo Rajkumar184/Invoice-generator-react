@@ -166,11 +166,10 @@ const App = () => {
                   <div class="row gutters justify-content-end text-right">
                     <div class="col-lg-6 col-md-6 col-sm-6 ">
                       <address class="text-right">
-                        Nextyn Pte Ltd<br />
-                        68 Circular Road, #02-01,
-                        049422, Singapore
+                      Nextyn Advisory Private Limited<br />
+                      32 Madhuban Industrial Estate, Mahakali Caves Road, Andheri East, Mumbai - 400093, Maharashtra, India
                         <br />
-                        info@nextyn.com
+                        consulting@nextyn.com
                       </address>
                     </div>
                   </div>
