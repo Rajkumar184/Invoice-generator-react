@@ -87,7 +87,7 @@ const App = () => {
       key: 'action',
       render: (text, record, index) => (
         <>
-        {console.log(record, "record")}
+          {console.log(record, "record")}
           <Button
             type="primary"
             onClick={() => generateInvoicePDF(renderInvoiceContent(record, index), `${record?.Name} ${record?.Invoice_No}.pdf`)}
@@ -153,11 +153,12 @@ const App = () => {
             <div class="card-body p-0">
               <div class="invoice-container">
                 <div class="invoice-header">
+                
 
                 <div class="row gutters">
-                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 text-center">
                   <p class="invoice-logo">
-                    Invoice
+                    INVOICE 
                   </p>
                 </div>
               </div>
@@ -180,6 +181,7 @@ const App = () => {
                         <address className='text-left'>
                         ${data?.Name} <br />
                         ${data?.Country} <br />
+                        ${data?.Address} <br />
                         ${data?.Email_ID}
                         </address>
                       </div>
@@ -215,7 +217,7 @@ const App = () => {
                         <table class="table custom-table m-0">
                           <thead>
                             <tr>
-                              <th>DESCRIPTION</th>
+                              <th>Description</th>
                               <th>Hourly Consulting Fee</th>
                               <th>Duration</th>
                               <th>Total</th>
@@ -235,7 +237,7 @@ const App = () => {
                               <td>&nbsp;</td>
                               <td colspan="2">
                                 <p>
-                                  Subtotal<br />
+                                  Sub Total<br />
                                  
                                 </p>
                               </td>
@@ -247,6 +249,9 @@ const App = () => {
                             </tr>
                           </tbody>
                         </table>
+                      </div>
+                      <div class="text-center mt-4">
+                          <p class='fw-bolder sys_gen'>* This is a System Generated Invoice *</p>
                       </div>
                     </div>
                   </div>
@@ -293,7 +298,7 @@ const App = () => {
           </div> */}
         </div>
 
-        {/* <div>
+        <div>
           <div class="container-fluid">
             <div class="row gutters">
               <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
@@ -346,7 +351,7 @@ const App = () => {
                               <table class="table custom-table m-0">
                                 <thead>
                                   <tr>
-                                    <th>DESCRIPTION</th>
+                                    <th>Description</th>
                                     <th>Hourly Consulting Fee</th>
                                     <th>Duration</th>
                                     <th>Total</th>
@@ -381,17 +386,20 @@ const App = () => {
                                 </tbody>
                               </table>
                             </div>
+                            <div class="text-center mt-4">
+                              <p class='fw-bolder sys_gen'>* This is a System Generated Invoice *</p>
+                            </div>
                           </div>
                         </div>
                       </div>
-                     
+
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </div> */}
+        </div>
 
       </div>
     </div>

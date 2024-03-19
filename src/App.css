@@ -142,3 +142,7 @@ body {
 .custom-actions-btns .btn {
   margin: .3rem 0 .3rem .3rem;
 }
+
+.sys_gen {
+  font-weight: 600;
+}
